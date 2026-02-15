@@ -1,9 +1,6 @@
 import socket
 import subprocess
 from enum import Enum
-
-import requests
-
 from adapter import Adapter
 
 
@@ -44,6 +41,7 @@ class IpProvider:
 
     @staticmethod
     def get_public_ip() -> str:
+        import requests
         err, public_ip = None, None
         try:
             response = requests.get('https://api.ipify.org')
@@ -86,9 +84,9 @@ class IpProvider:
             socknum = s.getsockname()[1]
         return socknum
 
-def main():
+def printconfigs():
     print(IpProvider.get_ipconfig())
 
 
 if __name__ == "__main__":
-    main()
+    printconfigs()

@@ -1,0 +1,13 @@
+[project]
+name = "ipconfig"
+version = "0.1.0"
+authors = [{name = "Daniel Hollarek", email = "daniel.hollarek@googlemail.com"}]
+description = "Netowrk information in ipconfig format"
+readme = "readme.md"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["ipconfig*"]
+
+[project.scripts]
+ipconfig = "ipconfig.main:printconfigs"
