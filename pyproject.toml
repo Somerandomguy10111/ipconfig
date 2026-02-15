@@ -1,10 +1,11 @@
 [project]
 name = "ipconfig"
-version = "0.1.0"
+version = "0.9.9"
 authors = [{name = "Daniel Hollarek", email = "daniel.hollarek@googlemail.com"}]
 description = "Netowrk information in ipconfig format"
 readme = "readme.md"
 dependencies = []
+urls = { "Repository" = "https://github.com/Somerandomguy10111/ipconfig" }
 
 [tool.setuptools.packages.find]
 include = ["ipconfig*"]
