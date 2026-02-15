@@ -1,7 +1,7 @@
 import socket
 import subprocess
 from enum import Enum
-from adapter import Adapter
+from ipconfig.adapter import Adapter
 
 
 class NetworkArea(Enum):
